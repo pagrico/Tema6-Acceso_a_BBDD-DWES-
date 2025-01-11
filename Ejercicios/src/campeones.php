@@ -26,6 +26,8 @@ try {
                         <th class="border border-gray-300 px-4 py-2">Rol</th>
                         <th class="border border-gray-300 px-4 py-2">Dificultad</th>
                         <th class="border border-gray-300 px-4 py-2">Descripción</th>
+                        <th class="border border-gray-300 px-4 py-2"></th>
+
                     </tr>
                 </thead>
                 <tbody>';
