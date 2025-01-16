@@ -4,7 +4,7 @@ include "conexion.php";
 try {
     $sql = "SELECT * FROM `campeon`";
     $resultado = $conexion->query($sql);
-    $resultado->setFetchMode(PDO::FETCH_BOTH);
+
 
     // Inicio del HTML
     echo '<!DOCTYPE html>

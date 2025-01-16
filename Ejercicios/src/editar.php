@@ -23,10 +23,9 @@ if (!$ID) {
 
 try {
     // Preparar consulta segura
-    $sql = "SELECT * FROM campeon WHERE ID = ?";
-    $sentencia = $conexion->prepare($sql);
-    $sentencia->execute([$ID]);
-    $campeon = $sentencia->fetch(PDO::FETCH_ASSOC);
+    $sql = "SELECT * FROM campeon WHERE ID = $ID";
+    $sentencia = $conexion->query($sql);
+    $campeon = $sentencia->fetch();
 
     if (!$campeon) {
         die("No se encontró ningún campeón con ID $ID.");

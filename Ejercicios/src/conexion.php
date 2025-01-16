@@ -11,7 +11,7 @@ try {
     // Opciones adicionales para PDO
     $opciones = [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, // Manejo de errores mediante excepciones
-        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC, // Devuelve resultados como arrays asociativos
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_BOTH, // Devuelve resultados como arrays asociativos
         PDO::ATTR_EMULATE_PREPARES => false, // Desactiva la emulación de consultas preparadas
     ];
 
